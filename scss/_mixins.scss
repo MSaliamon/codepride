@@ -1,0 +1,19 @@
+@mixin Ubuntu($fs, $fw, $lh) {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+@mixin Inter($fs, $fw, $lh) {
+    font-family: 'Inter', sans-serif;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin flex( $jc, $ai, $gp) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gp;
+}

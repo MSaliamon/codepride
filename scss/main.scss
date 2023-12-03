@@ -1,0 +1,50 @@
+@import './reset';
+@import './mixins';
+@import './vars';
+
+body {
+    background-color: $Background;
+    .wrapper {
+        .header {
+            @include flex(space-around, center, 0px);
+            padding: 20px 0px 19px 0px;
+            &__btn {
+                padding: 18px 32px;
+                @include Inter(16px, 600, normal);
+                color: $Background;
+            }
+        }
+        .nav {
+            &__list {
+                display: flex;
+                gap: 56px;
+                &__item {
+                    &__link {
+                        @include Ubuntu(24px, 400, normal);
+                        color: $Black;
+                    }
+                }
+            }
+        }
+        .btn {
+            @include flex(center, center, 10px);
+            background-color: $Accent;
+            text-transform: uppercase;
+            border-radius: 44px;
+        }
+        .section1 {
+            display: flex;
+            flex-direction: column;
+            padding: 100px 0px;
+            &__text {
+                @include Ubuntu(28px, 300, normal);
+                color: $Black;
+                text-align: center;
+            }
+            &__title {
+                @include Ubuntu(64px, 500, normal);
+                text-align: center;
+            }
+        }
+    }
+}
