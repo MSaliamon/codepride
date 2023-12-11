@@ -33,18 +33,69 @@ body {
             border-radius: 44px;
         }
         .section1 {
-            display: flex;
+            @include flex(flex-start, center, 20px);
             flex-direction: column;
-            padding: 100px 0px;
+            padding: 100px 260px;
             &__text {
                 @include Ubuntu(28px, 300, normal);
                 color: $Black;
                 text-align: center;
             }
             &__title {
-                @include Ubuntu(64px, 500, normal);
+                @include Ubuntu(50px, 500, normal);
                 text-align: center;
+                &-text {
+                    color: $Purple;
+                }
+            }
+            &__sub-title {
+                @include Ubuntu(32px, 400, normal);
+                text-align: center;
+                width: 75%;
+                margin-top: 20px;
+            }
+            &__btn {
+                @include Inter(24px, 600, normal);
+                padding: 24px 44px;
+                color: $Background;
+            }
+            &-container {
+                @include flex(flex-start, center, 22px);
+            }
+            &-box {
+                @include flex(flex-start, center, 22px);
+                flex-direction: column;
+                &__contant {
+                    @include flex(center, center, 8px);
+                    flex-direction: column;
+                    &-title {
+                        @include Ubuntu(21px, 500, normal);
+                        color: $Black;
+                        text-align: center;
+                    }
+                    &-text {
+                        @include Ubuntu(18px, 400, normal);
+                        color: $Gray;
+                        text-align: center;
+                    }
+                    &-wrapper {
+                        @include flex(center, center, 10px);
+                    }
+                    &-contain {
+                        @include flex(center, center, 10px);
+                        padding: 6px 10px;
+                        border-radius: 44px;
+                        border: 1px solid $Accent;
+                        &__text {
+                            @include Ubuntu(15px, 300, normal);
+                        }
+                    }
+                }
             }
         }
+        .min--width {
+            width: 90%;
+        }
+        
     }
 }
