@@ -32,6 +32,13 @@ body {
             text-transform: uppercase;
             border-radius: 44px;
         }
+        .title {
+            @include Ubuntu(50px, 500, normal);
+            text-align: center;
+            &-text {
+                color: $Purple;
+            }
+        }
         .section1 {
             @include flex(flex-start, center, 20px);
             flex-direction: column;
@@ -40,13 +47,6 @@ body {
                 @include Ubuntu(28px, 300, normal);
                 color: $Black;
                 text-align: center;
-            }
-            &__title {
-                @include Ubuntu(50px, 500, normal);
-                text-align: center;
-                &-text {
-                    color: $Purple;
-                }
             }
             &__sub-title {
                 @include Ubuntu(32px, 400, normal);
@@ -95,6 +95,71 @@ body {
         }
         .min--width {
             width: 90%;
+        }
+        .section2 {
+            @include flex(flex-start, center, 20px);
+            flex-direction: column;
+            &__text {
+                @include Ubuntu(28px, 300, normal);
+                text-transform: uppercase;
+                color: $Black;
+            }
+            &__title {
+                width: 50%;
+                margin-bottom: 100px;
+            }
+            &-container {
+                @include flex(flex-start, center, 60px);
+                padding: 0px 100px;
+            }
+            &-box {
+                @include flex(center, center, 30px);
+                flex-direction: column;
+                width: 30%;
+                &__title {
+                    @include Ubuntu(21px, 500, normal);
+                    color: $Black;
+                }
+                &__text {
+                    @include Ubuntu(24px, 300, normal);
+                }
+            }
+            &-container2 {
+                padding: 120px 130px 229px 130px;
+                &__wrapper {
+                    @include flex(flex-start, flex-start, 30px);
+                }
+                &__textbox {
+                    @include flex(flex-start, flex-start, 24px);
+                    flex-direction: column;
+                    &-text {
+                        @include Ubuntu(24px, 300, 120%);
+                    }
+                    &-title {
+                        text-align: start;
+                        width: 80%;
+                    }
+                }
+                &__box {
+                    @include flex(flex-start, flex-start, 36px);
+                    flex-direction: column;
+                    &-img-content {
+                        @include flex(center, center, 20px);
+                        &-image {
+                            border-radius: 100px;
+                        }
+                    }
+                    &-text {
+                        @include Ubuntu(24px, 300, 120%);
+                    }
+                }
+                &__btn {
+                    @include Inter(24px, 600, normal);
+                    margin: 32px 0px 0px 520px;
+                    padding: 24px 44px;
+                    color: $Background;
+                }
+            }
         }
         
     }
