@@ -96,6 +96,7 @@ body {
         .min--width {
             width: 90%;
         }
+        
         .section2 {
             @include flex(flex-start, center, 20px);
             flex-direction: column;
@@ -161,6 +162,40 @@ body {
                 }
             }
         }
+        .section3 {
+            &-wrapper {
+                @include flex(flex-start, flex-start, 56px);
+                flex-direction: column;
+                padding: 100px 170px;
+            }
+            &-container {
+                @include flex(flex-start, flex-start, 150px);
+            }
+            &-box {
+                @include flex(flex-start, flex-start, 100px);
+                flex-direction: column;
+                &__title {
+                    @include Ubuntu(17px, 500, normal);
+                    width: 100%;
+                }
+            }
+            &-box2 {
+                @include flex(flex-start, flex-start, 180px);
+                flex-direction: column;
+                &__number {
+                    @include Ubuntu(28px, 400, normal);
+                }
+                &__text {
+                    @include Ubuntu(24px, 300, normal);
+                    width: 90%;
+                }
+            }
+
+        }
+        .min--width2 {
+            width: 84%;
+        }
+        
         
     }
 }
