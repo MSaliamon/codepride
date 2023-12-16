@@ -195,7 +195,34 @@ body {
         .min--width2 {
             width: 84%;
         }
-        
+        .section4 {
+            padding-top: 120px;
+            &__text {
+                @include Ubuntu(24px, 300, 120%);
+                text-align: center;
+                margin-bottom: 24px;
+            }
+            &-container {
+                @include flex(center, center, 30px);
+                margin-top: 80px;
+            }
+            &-box {
+                @include flex(flex-start, center, 40px);
+                flex-direction: column;
+                padding: 28px 24px;
+                border-radius: 44px;
+                border: 1px solid $Light-Purple;
+                &__text {
+                    @include Ubuntu(24px, 400, 120%);
+                    color: $Black;
+                    text-align: center;
+                }
+                &__text2 {
+                    @include Ubuntu(72px, 500, 120%);
+                    color: $Accent;
+                }
+            }
+        }
         
     }
 }

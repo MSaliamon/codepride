@@ -538,3 +538,61 @@ body .wrapper .section3-box2__text {
 body .wrapper .min--width2 {
   width: 84%;
 }
+body .wrapper .section4 {
+  padding-top: 120px;
+}
+body .wrapper .section4__text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 120%;
+  text-align: center;
+  margin-bottom: 24px;
+}
+body .wrapper .section4-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  margin-top: 80px;
+}
+body .wrapper .section4-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 28px 24px;
+  border-radius: 44px;
+  border: 1px solid #D7DAFC;
+}
+body .wrapper .section4-box__text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 120%;
+  color: #040404;
+  text-align: center;
+}
+body .wrapper .section4-box__text2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 120%;
+  color: #5251EC;
+}
