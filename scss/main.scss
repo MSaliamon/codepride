@@ -220,6 +220,7 @@ body {
                 &__text2 {
                     @include Ubuntu(72px, 500, 120%);
                     color: $Accent;
+                    padding-bottom: 120px;
                 }
             }
         }
