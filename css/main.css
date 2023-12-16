@@ -580,6 +580,7 @@ body .wrapper .section4-box {
   padding: 28px 24px;
   border-radius: 44px;
   border: 1px solid #D7DAFC;
+  padding-bottom: 120px;
 }
 body .wrapper .section4-box__text {
   font-family: "Ubuntu", sans-serif;
@@ -595,5 +596,4 @@ body .wrapper .section4-box__text2 {
   font-weight: 500;
   line-height: 120%;
   color: #5251EC;
-  padding-bottom: 120px;
 }

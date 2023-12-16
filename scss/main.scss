@@ -212,6 +212,7 @@ body {
                 padding: 28px 24px;
                 border-radius: 44px;
                 border: 1px solid $Light-Purple;
+                padding-bottom: 120px;
                 &__text {
                     @include Ubuntu(24px, 400, 120%);
                     color: $Black;
@@ -220,10 +221,11 @@ body {
                 &__text2 {
                     @include Ubuntu(72px, 500, 120%);
                     color: $Accent;
-                    padding-bottom: 120px;
                 }
             }
         }
-        
+        .section5 {
+
+        }
     }
 }
