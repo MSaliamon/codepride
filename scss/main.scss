@@ -212,7 +212,7 @@ body {
                 padding: 28px 24px;
                 border-radius: 44px;
                 border: 1px solid $Light-Purple;
-                padding-bottom: 120px;
+                margin-bottom: 120px;
                 &__text {
                     @include Ubuntu(24px, 400, 120%);
                     color: $Black;
@@ -225,7 +225,106 @@ body {
             }
         }
         .section5 {
-
+            padding: 0px 219px 0px 219px;
+            background-color: $White;
+            &__title {
+                color: $Black;
+            }
+            &-link {
+                padding: 0px;
+                @include flex(flex-start, center, 40px);
+                flex-direction: column;
+                margin-top: 80px;
+            }
+            .link-box {
+                display: flex;
+                &__item {
+                    @include flex(center, center, 10px);
+                    padding: 10px 22px 32px 22px;
+                }
+                &__link {
+                    @include Ubuntu(22px, 500, normal);
+                    color: $LightGray;
+                }
+                &__link:hover {
+                    color: $Black;
+                    border-bottom: 2px solid $Black;
+                    padding: 10px 22px 32px 22px;
+                }
+            }
+            &-container {
+                margin-top: 32px;
+                @include flex(space-around, center, 40px);
+                padding: 40px 44px;
+                border-radius: 44px;
+                border: 2px solid $Stroke;
+                background: $White;
+                &__title {
+                    @include Ubuntu(24px, 500, normal);
+                    color: $Black;
+                }
+                &__wrap {
+                    @include flex(flex-start, center, 56px);
+                }
+                &__wrap1 {
+                    @include flex(flex-start, center, 20px);
+                }
+                &__wrap2 {
+                    @include flex(flex-start, center, 14px);
+                }
+                &__box {
+                    @include flex(center, center, 10px);
+                    padding: 8px 14px;
+                    border-radius: 44px;
+                    border: 1.5px solid $Accent;
+                    &-text {
+                        @include Ubuntu(17px, 400, normal);
+                        color: $Black;
+                    }
+                }
+                &__arrow-up {
+                    display: none;
+                }
+                &__arrow-up2 {
+                    display: none;
+                }
+            }
+            &-container2, &-container2-1 {
+                @include flex(flex-start, center, 30px);
+                &__box {
+                    &-container {
+                        @include flex(flex-start, flex-start, 8px);
+                        flex-direction: column;
+                        padding: 12px 0px 16px 40px;
+                        border-radius: 0px 0px 44px 44px;
+                        border-right: 1px solid $Light-Purple;
+                        border-bottom: 1px solid $Light-Purple;
+                        border-left: 1px solid $Light-Purple;
+                    }
+                    &-title {
+                        @include Ubuntu(24px, 500, normal);
+                        color: $Black;
+                    }
+                    &-text {
+                        @include Ubuntu(14px, 400, normal);
+                        color: $Gray;
+                        text-transform: uppercase;
+                    }
+                }
+                &__contant {
+                    @include flex(center, center, 8px);
+                    &-contain {
+                        @include flex(center, center, 10px);
+                        padding: 6px 10px;
+                        border-radius: 44px;
+                        border: 1px solid $Accent;
+                        &-text {
+                            @include Ubuntu(14px, 400, normal);
+                            color: $Black;
+                        }
+                    }
+                }
+            }
         }
     }
 }

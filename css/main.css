@@ -580,7 +580,7 @@ body .wrapper .section4-box {
   padding: 28px 24px;
   border-radius: 44px;
   border: 1px solid #D7DAFC;
-  padding-bottom: 120px;
+  margin-bottom: 120px;
 }
 body .wrapper .section4-box__text {
   font-family: "Ubuntu", sans-serif;
@@ -596,4 +596,228 @@ body .wrapper .section4-box__text2 {
   font-weight: 500;
   line-height: 120%;
   color: #5251EC;
+}
+body .wrapper .section5 {
+  padding: 0px 219px 0px 219px;
+  background-color: #FEFEFF;
+}
+body .wrapper .section5__title {
+  color: #040404;
+}
+body .wrapper .section5-link {
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 80px;
+}
+body .wrapper .section5 .link-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .wrapper .section5 .link-box__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding: 10px 22px 32px 22px;
+}
+body .wrapper .section5 .link-box__link {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: normal;
+  color: #D2D2D2;
+}
+body .wrapper .section5 .link-box__link:hover {
+  color: #040404;
+  border-bottom: 2px solid #040404;
+  padding: 10px 22px 32px 22px;
+}
+body .wrapper .section5-container {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+  padding: 40px 44px;
+  border-radius: 44px;
+  border: 2px solid #F4F4F4;
+  background: #FEFEFF;
+}
+body .wrapper .section5-container__title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+  color: #040404;
+}
+body .wrapper .section5-container__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 56px;
+}
+body .wrapper .section5-container__wrap1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+body .wrapper .section5-container__wrap2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 14px;
+}
+body .wrapper .section5-container__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  border-radius: 44px;
+  border: 1.5px solid #5251EC;
+}
+body .wrapper .section5-container__box-text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: normal;
+  color: #040404;
+}
+body .wrapper .section5-container__arrow-up {
+  display: none;
+}
+body .wrapper .section5-container__arrow-up2 {
+  display: none;
+}
+body .wrapper .section5-container2, body .wrapper .section5-container2-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+body .wrapper .section5-container2__box-container, body .wrapper .section5-container2-1__box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 8px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 12px 0px 16px 40px;
+  border-radius: 0px 0px 44px 44px;
+  border-right: 1px solid #D7DAFC;
+  border-bottom: 1px solid #D7DAFC;
+  border-left: 1px solid #D7DAFC;
+}
+body .wrapper .section5-container2__box-title, body .wrapper .section5-container2-1__box-title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+  color: #040404;
+}
+body .wrapper .section5-container2__box-text, body .wrapper .section5-container2-1__box-text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  color: #6E6E6E;
+  text-transform: uppercase;
+}
+body .wrapper .section5-container2__contant, body .wrapper .section5-container2-1__contant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+body .wrapper .section5-container2__contant-contain, body .wrapper .section5-container2-1__contant-contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  border-radius: 44px;
+  border: 1px solid #5251EC;
+}
+body .wrapper .section5-container2__contant-contain-text, body .wrapper .section5-container2-1__contant-contain-text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  color: #040404;
 }
