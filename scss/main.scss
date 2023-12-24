@@ -196,6 +196,7 @@ body {
             width: 84%;
         }
         .section4 {
+            background-color: $White;
             padding-top: 120px;
             &__text {
                 @include Ubuntu(24px, 300, 120%);
@@ -226,9 +227,10 @@ body {
         }
         .section5 {
             padding: 0px 219px 0px 219px;
-            background-color: $White;
+            background-color: $Background;
             &__title {
                 color: $Black;
+                padding-top: 240px;
             }
             &-link {
                 padding: 0px;
@@ -324,6 +326,110 @@ body {
                         }
                     }
                 }
+            }
+        }
+        .section6 {
+            background-color: $White;
+            @include flex(flex-start, flex-start, 30px);
+            margin-top: 120px;
+            padding: 120px 219px 0px 219px;
+            &-wrap1 {
+                @include flex(flex-start, flex-start, 30px);
+                flex-direction: column;
+            }
+            &-textbox {
+                @include flex(flex-start, flex-start, 24px);
+                flex-direction: column;
+                width: 75%;
+                &__title {
+                    text-align: start;
+                    width: 80%;
+                    color: $Black;
+                }
+                &__text {
+                    @include Ubuntu(24px, 300, 120%);
+                    color: $Black;
+                }
+            }
+            &-box {
+                border-radius: 40px;
+                @include flex(flex-start, flex-start, 187px);
+                background-image: url(../img/image\ 14.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                &__block1 {
+                    margin: 32px 0px 393px 32px;
+                    @include flex(flex-start, flex-start, 6px);
+                    flex-direction: column;
+                    &-textbox {
+                        @include flex(flex-start, center, 10px);
+                        padding: 6px 16px;
+                        border-radius: 44px;
+                        background: $White;
+                        backdrop-filter: blur(2px);
+                        &-text {
+                            @include Ubuntu(14px, 400, normal);
+                            color: $Black;
+                        }
+                    }
+                }
+                &__block2 {
+                    @include flex(flex-start, flex-end, 225px);
+                    flex-direction: column;
+                    margin: 32px;
+                    &-textbox {
+                        @include flex(flex-start, flex-start, 0px);
+                        padding: 16px 24px;
+                        border-radius: 44px;
+                        background-color: $White;
+                        &-text {
+                            @include Ubuntu(24px, 500, normal);
+                            
+                        }
+                    }
+                    &-imgbox {
+                        padding: 12px;
+                        border-radius: 44px;
+                        border: 2.5px solid $Accent;
+                        background: $White;
+                    }
+                }
+            }
+            &-container {
+                @include flex(flex-start, flex-start, 30px);
+                flex-direction: column;
+            }
+            &-box1 {
+                background-image: url(../img/image\ 15.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 40px;
+                @include flex(flex-start, flex-start, 152px);
+                flex-direction: column;
+                &__block2-imgbox {
+                    padding: 12px;
+                    border-radius: 44px;
+                    border: 2.5px solid $Accent;
+                    background: $White;
+                    margin: 32px 440px 0px 32px;
+                }
+                &__block2 {
+                    &-textbox {
+                        @include flex(flex-start, flex-start, 0px);
+                        padding: 16px 24px;
+                        border-radius: 44px;
+                        background-color: $White;
+                        margin: 32px;
+                        &-text {
+                            @include Ubuntu(24px, 500, normal);
+                            
+                        }
+                    }
+                }
+            }
+            &-box2 {
+                background-color: $Purple;
+                border-radius: 44px;
             }
         }
     }

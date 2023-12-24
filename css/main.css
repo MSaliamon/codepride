@@ -539,6 +539,7 @@ body .wrapper .min--width2 {
   width: 84%;
 }
 body .wrapper .section4 {
+  background-color: #FEFEFF;
   padding-top: 120px;
 }
 body .wrapper .section4__text {
@@ -599,10 +600,11 @@ body .wrapper .section4-box__text2 {
 }
 body .wrapper .section5 {
   padding: 0px 219px 0px 219px;
-  background-color: #FEFEFF;
+  background-color: #F7F7FB;
 }
 body .wrapper .section5__title {
   color: #040404;
+  padding-top: 240px;
 }
 body .wrapper .section5-link {
   padding: 0px;
@@ -820,4 +822,234 @@ body .wrapper .section5-container2__contant-contain-text, body .wrapper .section
   font-weight: 400;
   line-height: normal;
   color: #040404;
+}
+body .wrapper .section6 {
+  background-color: #FEFEFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 30px;
+  margin-top: 120px;
+  padding: 120px 219px 0px 219px;
+}
+body .wrapper .section6-wrap1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .wrapper .section6-textbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 24px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 75%;
+}
+body .wrapper .section6-textbox__title {
+  text-align: start;
+  width: 80%;
+  color: #040404;
+}
+body .wrapper .section6-textbox__text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 120%;
+  color: #040404;
+}
+body .wrapper .section6-box {
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 187px;
+  background-image: url(../img/image\ 14.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .wrapper .section6-box__block1 {
+  margin: 32px 0px 393px 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 6px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .wrapper .section6-box__block1-textbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding: 6px 16px;
+  border-radius: 44px;
+  background: #FEFEFF;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+body .wrapper .section6-box__block1-textbox-text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  color: #040404;
+}
+body .wrapper .section6-box__block2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 225px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 32px;
+}
+body .wrapper .section6-box__block2-textbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 0px;
+  padding: 16px 24px;
+  border-radius: 44px;
+  background-color: #FEFEFF;
+}
+body .wrapper .section6-box__block2-textbox-text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+}
+body .wrapper .section6-box__block2-imgbox {
+  padding: 12px;
+  border-radius: 44px;
+  border: 2.5px solid #5251EC;
+  background: #FEFEFF;
+}
+body .wrapper .section6-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .wrapper .section6-box1 {
+  background-image: url(../img/image\ 15.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 152px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .wrapper .section6-box1__block2-imgbox {
+  padding: 12px;
+  border-radius: 44px;
+  border: 2.5px solid #5251EC;
+  background: #FEFEFF;
+  margin: 32px 440px 0px 32px;
+}
+body .wrapper .section6-box1__block2-textbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 0px;
+  padding: 16px 24px;
+  border-radius: 44px;
+  background-color: #FEFEFF;
+  margin: 32px;
+}
+body .wrapper .section6-box1__block2-textbox-text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+}
+body .wrapper .section6-box2 {
+  background-color: #8E96EA;
+  border-radius: 44px;
 }
