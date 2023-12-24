@@ -374,7 +374,7 @@ body {
                     }
                 }
                 &__block2 {
-                    @include flex(flex-start, flex-end, 225px);
+                    @include flex(flex-start, flex-end, 287px);
                     flex-direction: column;
                     margin: 32px;
                     &-textbox {
@@ -428,8 +428,42 @@ body {
                 }
             }
             &-box2 {
+                @include flex(space-between, flex-start, 97px);
+                flex-direction: column;
                 background-color: $Purple;
                 border-radius: 44px;
+                padding: 32px;
+                &__content {
+                    @include flex(flex-start, flex-start, 222px);
+                    &-textbox {
+                        border-radius: 44px;
+                        border: 1px solid $White;
+                        padding: 6px 16px;
+                        &-text {
+                            @include Ubuntu(14px, 400, normal);
+                            text-align: center;
+                            color: $White;
+                        }
+                    }
+                }
+                &__imgbox {
+                    border-radius: 44px;
+                    border: 2.5px solid $White;
+                    background-color: $Accent;
+                    padding: 12px;
+                }
+                &__textbox {
+                    @include flex(flex-start, flex-start, 12px);
+                    flex-direction: column;
+                    &-text1 {
+                        @include Ubuntu(16px, 300, normal);
+                        color: $White;
+                    }
+                    &-text2 {
+                        @include Ubuntu(24px, 500, normal);
+                        color: $White;
+                    }
+                }
             }
         }
     }
