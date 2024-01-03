@@ -428,6 +428,7 @@ body {
                 }
             }
             &-box2 {
+                margin-bottom: 120px;
                 @include flex(space-between, flex-start, 97px);
                 flex-direction: column;
                 background-color: $Purple;
@@ -464,6 +465,48 @@ body {
                         color: $White;
                     }
                 }
+            }
+        }
+        .section7 {
+            margin-top: 120px;
+            &-wrap {
+                @include flex(center, center, 30px);
+                flex-direction: column;
+                margin-top: 80px;
+            }
+            &-container {
+                @include flex(center, center, 30px);
+            }
+            &-box {
+                @include flex(flex-start, flex-start, 16px);
+                flex-direction: column;
+                width: 80%;
+                &__text {
+                    @include Ubuntu(18px, 300, 30px);
+                    color: $Black;
+                    width: 65%;
+                }
+            }
+            &-contain {
+                @include flex(flex-start, center, 240px);
+                width: 100%;
+                &__title {
+                    @include Ubuntu(22px, 500, 28px);
+                }
+                &__imgbox-img {
+                    padding: 11px;
+                    border-radius: 12px;
+                    border: 2px solid $Accent;
+                }
+            }
+            .min--gap {
+                gap: 140px;
+            }
+            .more--gap {
+                gap: 280px;
+            }
+            .more--gap2 {
+                gap: 275px;
             }
         }
     }
