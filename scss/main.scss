@@ -485,6 +485,7 @@ body {
                     @include Ubuntu(18px, 300, 30px);
                     color: $Black;
                     width: 65%;
+                    margin-left: 150px;
                 }
             }
             &-contain {
@@ -492,6 +493,7 @@ body {
                 width: 100%;
                 &__title {
                     @include Ubuntu(22px, 500, 28px);
+                    margin-left: 150px;
                 }
                 &__imgbox-img {
                     padding: 11px;
@@ -508,6 +510,9 @@ body {
             .more--gap2 {
                 gap: 275px;
             }
+        }
+        .section8 {
+            margin-top: 120px;
         }
     }
 }

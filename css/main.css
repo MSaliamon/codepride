@@ -1186,6 +1186,7 @@ body .wrapper .section7-box__text {
   line-height: 30px;
   color: #040404;
   width: 65%;
+  margin-left: 150px;
 }
 body .wrapper .section7-contain {
   display: -webkit-box;
@@ -1205,6 +1206,7 @@ body .wrapper .section7-contain__title {
   font-size: 22px;
   font-weight: 500;
   line-height: 28px;
+  margin-left: 150px;
 }
 body .wrapper .section7-contain__imgbox-img {
   padding: 11px;
@@ -1219,4 +1221,7 @@ body .wrapper .section7 .more--gap {
 }
 body .wrapper .section7 .more--gap2 {
   gap: 275px;
+}
+body .wrapper .section8 {
+  margin-top: 120px;
 }
