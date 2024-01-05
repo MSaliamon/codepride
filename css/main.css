@@ -1416,7 +1416,7 @@ body .footer-contentbox2 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  gap: 245px;
+  gap: 200px;
 }
 body .footer-container2 {
   display: -webkit-box;

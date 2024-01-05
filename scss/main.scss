@@ -575,7 +575,7 @@ body {
             }
         }
         &-contentbox2 {
-            @include flex(flex-start, flex-start, 245px);
+            @include flex(flex-start, flex-start, 200px);
         }
         &-container2 {
             @include flex(center, center, 10px);
