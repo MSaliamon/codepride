@@ -14,6 +14,9 @@ body {
                 @include Inter(16px, 600, normal);
                 color: $Background;
             }
+            .burger-menu {
+                display: none;
+            }
         }
         .nav {
             &__list {
@@ -194,6 +197,9 @@ body {
         .section4 {
             background-color: $White;
             padding-top: 120px;
+            &__title {
+                width: 100%;
+            }
             &__text {
                 @include Ubuntu(24px, 300, 120%);
                 text-align: center;
@@ -319,9 +325,9 @@ body {
         }
         .section6 {
             background-color: $White;
-            @include flex(flex-start, flex-start, 30px);
+            @include flex(center, flex-start, 30px);
             margin-top: 120px;
-            padding: 120px 219px 0px 219px;
+            padding: 120px 0px 0px 0px;
             &-wrap1 {
                 @include flex(flex-start, flex-start, 30px);
                 flex-direction: column;
@@ -380,7 +386,9 @@ body {
                         background: $White;
                     }
                 }
+                
             }
+            
             &-container {
                 @include flex(flex-start, flex-start, 30px);
                 flex-direction: column;
@@ -397,7 +405,7 @@ body {
                     border-radius: 44px;
                     border: 2.5px solid $Accent;
                     background: $White;
-                    margin: 32px 440px 0px 32px;
+                    margin: 32px 0px 0px 32px;
                 }
                 &__block2 {
                     &-textbox {
@@ -411,7 +419,9 @@ body {
                             
                         }
                     }
+                    
                 }
+                
             }
             &-box2 {
                 margin-bottom: 120px;
@@ -475,7 +485,7 @@ body {
                 }
             }
             &-contain {
-                @include flex(flex-start, center, 240px);
+                @include flex(flex-start, center, 38px);
                 width: 100%;
                 &__title {
                     @include Ubuntu(22px, 500, 28px);
@@ -491,10 +501,10 @@ body {
                 gap: 140px;
             }
             .more--gap {
-                gap: 280px;
+                gap: 60px;
             }
             .more--gap2 {
-                gap: 275px;
+                gap: 139px;
             }
         }
         .section8 {
@@ -527,10 +537,10 @@ body {
         flex-direction: column;
         background-color: $Black;
         margin-top: 300px;
-        padding: 500px 219px 80px;
+        padding: 500px 43px 80px;
 
         &-container {
-            @include flex(flex-start, flex-start, 370px);
+            @include flex(flex-start, flex-start, 225px);
         }
         &-box {
             @include flex(flex-start, flex-start, 32px);
@@ -586,6 +596,179 @@ body {
                 @include Ubuntu(20px, 300, normal);
                 color: $White;
                 text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1727px) and (min-width: 1281px) {
+    body {
+        .wrapper {
+            .header {
+                padding: 23px 31px;
+            }
+            .main {
+                .section1 {
+                    padding: 100px 138px;
+                }
+                .section2 {
+                    &-container2 {
+                        &__textbox {
+                            &-title {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .section3 {
+                    &-wrapper {
+                        padding: 240px 31px;
+                    }
+                }
+                .section5 {
+                    padding: 0px;
+                }
+                .section6 {
+                    padding: 120px 0px 0px 0px;
+                    &-textbox {
+                        &__title {
+                            width: 95%;
+                        }
+                    }
+                    &-box {
+                        &__block2 {
+                            &-textbox {
+                                padding: 16px 12px;
+                            }
+                        }
+                    }
+                }
+                .section7 {
+                    &-contain {
+                        gap: 30px;
+                    }
+                    .more--gap {
+                        gap: 0px;
+                    }
+                    .more--gap2 {
+                        gap: 30px;
+                    }
+                }
+                .section8 {
+                    padding: 80px 0px;
+                    &__text {
+                        width: 100%;
+                    }
+                }
+            }
+            .footer {
+                padding: 500px 31px 80px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 834px) and (min-width: 376px) {
+    body {
+        .wrapper {
+            .header {
+                &__btn {
+                    display: none;
+                }
+                .burger-menu {
+                    display: block;
+                }
+                .btn {
+                    display: none;
+                }
+            }
+            .nav {
+                &__list {
+                    display: none;
+                }
+            }
+            .main {
+                .section1 {
+                    padding: 100px 77px;
+                    &__sub-title {
+                        width: 100%;
+                    }
+                    &-container {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                }
+                .section2 {
+                    &__title {
+                        width: 91%;
+                    }
+                    &-container {
+                        gap: 27px;
+                        padding: 0px 12px;
+                    }
+                    &-box {
+                        &__text {
+                            font-size: 20px;
+                        }
+                    }
+                    .tablet--margin {
+                        margin-top: 32px;
+                    }
+                    &-container2 {
+                        padding: 120px 0px 229px 0px;
+                        &__wrapper {
+                            gap: 15px;
+                        }
+                        &__textbox {
+                            &-title {
+                                width: 100%;
+                            }
+                        }
+                        &__box {
+                            &-text {
+                                width: 85%;
+                            }
+                        }
+                        &__btn {
+                            margin: 32px 0px 0px 350px;
+                        }
+                    }
+
+                }
+                .section3 {
+                    &-wrapper {
+                        padding: 100px 20px;
+                    }
+                    &-container {
+                        gap: 10px;
+                    }
+                    &-box {
+                        gap: 173px;
+                    }
+                    &-box2 {
+                        &__text {
+                            width: 76%;
+                        }
+                    }
+                }
+                .section4 {
+                    &__title {
+                        width: 73%;
+                        margin-left: 102px;
+                    }
+                    &-container {
+                        gap: 5px;
+                    }
+                    &-box {
+                        padding: 28px 32px;
+                        &__text2 {
+                            
+                            font-size: 60px;
+                            text-align: center;
+                        }
+                        
+                    }
+                }
             }
         }
     }
