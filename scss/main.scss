@@ -668,6 +668,67 @@ body {
     }
 }
 
+@media screen and (max-width: 1280px) and (min-width: 834px) {
+    body {
+        .wrapper {
+            .main {
+                .section1 {
+                    padding: 100px 151px;
+                    &__title {
+                        width: 80%;
+                    }
+                }
+                .section2 {
+                    &-container2 {
+                        &__textbox {
+                            &-title {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .section5 {
+                    padding: 0px 0px;
+                    .link-box {
+                        &__link {
+                            font-size: 21px;
+                        }
+                    }
+                }
+                .section6 {
+                    &-box {
+                        &__block2 {
+                            &-textbox {
+                                &-text {
+                                    font-size: 21px;
+                                }
+                            }
+                        }
+                    }
+                    &-box2 {
+                        &__textbox {
+                            &-text2 {
+                                font-size: 23px;
+                            }
+                        }
+                    }
+                }
+                .section8 {
+                    &__text {
+                        width: 100%;
+                    }
+                }
+            }
+            .footer {
+                &-contentbox {
+                    gap: 102px;
+                }
+            }
+        }
+    }
+}
+
+
 @media screen and (max-width: 834px) and (min-width: 376px) {
     body {
         .wrapper {
@@ -769,7 +830,158 @@ body {
                         
                     }
                 }
+                .section5 {
+                    .tablet--d-none {
+                        display: none;
+                    }
+                    .tablet--margin-right {
+                        margin-right: -207px;
+                    }
+                    .section5--tablet-margin-right {
+                        margin-right: 190px;
+                    }
+                    padding: 0px;
+                    .link-box {
+                        padding: 10px 15px 32px 0px;
+                        
+                    }
+                    &-container {
+                        &__wrap {
+                            flex-direction: column;
+                        }
+                    }
+                }
+                .section6 {
+                    flex-wrap: wrap;
+                    &-box1 {
+                        &__block2 {
+                            &-imgbox {
+                                margin: 32px 700px 0px 32px;
+                            }
+                            
+                        }
+                    }
+                    &-container {
+                        flex-direction: column-reverse;
+                    }
+                    &-box2 {
+                        &__content {
+                            gap: 486px;
+                        }
+                    }
+                }
+                .section7 {
+                    &-contain {
+                        &__title {
+                            margin-left: 0px;
+                            width: 69%;
+                        }
+                    }
+                    .min--gap {
+                        gap: 71px;
+                    }
+                }
+                .section8 {
+                    margin: 120px 0px;
+                    padding: 80px 40px;
+                    &__text {
+                        width: 100%;
+                    }
+                }
+            }
+            .footer {
+                &-container {
+                    flex-direction: column;
+                    gap: 80px;
+                }
+                &-contentbox2 {
+                    gap: 254px;
+                }
             }
         }
     }
+}
+
+@media screen and (max-width: 376px) {
+    body {
+        .wrapper {
+            .header {
+                &__btn {
+                    display: none;
+                }
+                .burger-menu {
+                    display: block;
+                }
+                .btn {
+                    display: none;
+                }
+            }
+            .nav {
+                &__list {
+                    display: none;
+                }
+            }
+            .main {
+                .section1 {
+                    padding: 100px 0px;
+                    &__title {
+                        font-size: 32px;
+                    }
+                    &__sub-title {
+                        font-size: 20px;
+                        width: 100%;
+                    }
+                    &-container {
+                        flex-direction: column;
+                    }
+                }
+                .section2 {
+                    &__title {
+                        width: 100%;
+                        font-size: 32px;
+                    }
+                    &-container {
+                        padding: 0px;
+                        flex-direction: column;
+                    }
+                    &-box {
+                        padding: 0px 16px;
+                        width: 100%;
+                        &__text {
+                            font-size: 20px;
+                        }
+                    }
+                    &-container2 {
+                        padding: 120px 0px 229px 0px;
+                        &__wrapper {
+                            flex-direction: column-reverse;
+                        }
+                        &__textbox {
+                            &-title {
+                                width:81%;
+                                font-size: 32px;
+                            }
+                        }
+                        &__box {
+                            &-text {
+                                width: 89%;
+                            }
+                            &-img {
+                                &-content {
+                                    &-image {
+                                        width:28%;
+                                    }
+                                }
+                            }
+                        }
+                        &__btn {
+                            margin: 32px 0px 0px 0px;
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }
