@@ -980,6 +980,171 @@ body {
                         }
                     }
                 }
+                .section3 {
+                    &__title {
+                        font-size: 32px;
+                    }
+                    &-wrapper {
+                        padding: 100px 0px;
+                    }
+                    &-container {
+                        flex-direction: column;
+                    }
+                    &-box {
+                        &__title {
+                            font-size: 19px;
+                        }
+                    }
+                    &-box2 {
+                        &__text {
+                            width: 95%;
+                        }
+                    }
+                }
+                .section4 {
+                    &__text {
+                        font-size: 26px;
+                    }
+                    &__title {
+                        font-size: 32px;
+                    }
+                    &-container {
+                        flex-direction: column;
+                    }
+                }
+                .section5 {
+                    padding: 0px;
+                    .mobile--d-none {
+                        display: none;
+                    }
+                    .mobile--margin-right {
+                        margin-right: -300px;
+                    }
+                    &-link {
+                        align-items: flex-start;
+                    }
+                    .link-box {
+                        &__item {
+                            padding: 10px 0px 32px 10px;
+                        }
+                        &__link {
+                            font-size: 17px;
+                        }
+                    }
+                    &-container {
+                        padding: 40px 0px;
+                        gap: 0px;
+                        align-items: flex-start;
+                        &__wrap {
+                            flex-direction: column;
+                            flex-wrap: nowrap;
+                        }
+                        &__title {
+                            font-size: 16px;
+                        }
+                        &__wrap2 {
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-end;
+                            align-content: flex-end;
+                            gap: 8px;
+                            align-self: stretch;
+                            flex-wrap: wrap;
+                            
+                        }
+                        &__box {
+                            &-text {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+                .section6 {
+                    flex-direction: column;
+                    &-textbox {
+                        &__title {
+                            width: 70%;
+                            font-size: 32px;
+                        }
+                        &__text {
+                            width: 80%;
+                        }
+                    }
+                    &-box {
+                        gap: 0px;
+                        &__block1 {
+                            margin: 32px 0px 393px 10px;
+                        }
+                        &__block2 {
+                            flex-direction: column-reverse;
+                            &-textbox {
+                                width: 196%;
+                            }
+                        }
+                    }
+                    &-container {
+                        flex-direction: column-reverse;
+                    }
+                    &-box1 {
+                        &__block2 {
+                            &-textbox {
+                                margin: 8px;
+                                &-text {
+                                    width: 90%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .section7 {
+                    &-wrap {
+                        flex-direction: column;
+                    }
+                    &-container {
+                        flex-direction: column;
+                    }
+                    &-contain {
+                        &__title {
+                            margin-left: 0px;
+                            width: 90%;
+                        }
+                    }
+                    &-box {
+                        width: 100%;
+                    }
+                    .min--gap {
+                        gap: 0px;
+                    }
+                    .more--gap2 {
+                        gap: 100px;
+                    }
+                }
+                .section8 {
+                    margin: 120px 0px;
+                    padding: 80px 0px;
+                    &__title {
+                        font-size: 32px;
+                    }
+                    &__text {
+                        font-size: 25px;
+                        width: 100%;
+                    }
+                }
+            }
+            .footer {
+                padding: 500px 0px 80px;
+                &-container {
+                    flex-direction: column;
+                    gap: 50px;
+                }
+                &-contentbox {
+                    flex-direction: column;
+                    gap: 50px;
+                }
+                &-contentbox2 {
+                    flex-direction: column;
+                    gap: 50px;
+                }
             }
         }
     }
