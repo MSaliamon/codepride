@@ -180,6 +180,49 @@ body {
                     }
                 }
             }
+            .section3 {
+                @include flex(center, center, 24px);
+                flex-direction: column;
+                padding: 240px 208px;
+                &__sub-title {
+                    @include Ubuntu(44px, 300, normal);
+                    color: $Purple;
+                    text-align: center;
+                    width: 48%;
+                }
+                &__text {
+                    @include Ubuntu(24px, 300, 120%);
+                    width: 51%;
+                    text-align: center;
+                }
+                &-container {
+                    @include flex(flex-start, center, 30px);
+                }
+                &-box {
+                    @include flex(flex-start, flex-start, 156px);
+                    flex-direction: column;
+                }
+                &-contant {
+                    @include flex(flex-start, flex-start, 30px);
+                    padding: 32px;
+                    flex-direction: column;
+                    &__number {
+                        @include Ubuntu(24px, 500, normal);
+                        color: $Accent;
+                    }
+                    &__title {
+                        @include Inter(24px, 600, normal);
+                        text-transform: uppercase;
+                    }
+                    &__text {
+                        @include Inter(20px, 300, 140%);
+                        width: 100%;
+                    }
+                }
+                &-contant--margin {
+                    margin-top: 460px;
+                }
+            }
         }
     }
 }
