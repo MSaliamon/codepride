@@ -1,0 +1,185 @@
+@import './reset';
+@import './mixins';
+@import './vars';
+
+body {
+    background-color: $Background;
+    color: $Black;
+    .wrapper {
+        .header {
+            @include flex(space-around, center, 0px);
+            padding: 20px 0px 19px 0px;
+            &__btn {
+                padding: 18px 32px;
+                @include Inter(16px, 600, normal);
+                color: $Background;
+            }
+            .burger-menu {
+                display: none;
+            }
+
+            .nav {
+                &__list {
+                    display: flex;
+                    gap: 56px;
+                    &__item {
+                        &__link {
+                            color: $Black;
+                            @include Ubuntu(24px, 400, normal);
+                        }
+                    }
+                }
+            }
+        }
+        .btn {
+            @include flex(center, center, 10px);
+            background-color: $Accent;
+            text-transform: uppercase;
+            border-radius: 44px;
+        }
+        .title {
+            @include Ubuntu(50px, 500, normal);
+            text-align: center;
+            &-text {
+                color: $Purple;
+            }
+        }
+        .main {
+            .section1 {
+                @include flex(flex-start, center, 20px);
+                flex-direction: column;
+                padding: 100px 219px;
+                &__title {
+                    width: 70%;
+                }
+                &__text {
+                    @include Ubuntu(28px, 300, normal);
+                    text-align: center;
+                }
+                &__sub-title {
+                    @include Ubuntu(32px, 400, normal);
+                    text-align: center;
+                    width: 61%;
+                    margin-top: 20px;
+                }
+                &-container {
+                    @include flex(flex-start, center, 30px);
+                }
+                &-box {
+                    @include flex(flex-start, flex-start, 12px);
+                    flex-direction: column;
+                    padding: 32px;
+                    border-radius: 44px;
+                    border: 1px solid $Stroke;
+                    background: linear-gradient(209deg, #D3D2FF 0%, #FFF8F9 100%);
+                    box-shadow: 0px 0px 16px -6px rgba(0, 0, 0, 0.25) inset;
+                    &__chip {
+                        @include flex(center, center, 10px);
+                        border-radius: 44px;
+                        background-color: $White;
+                        padding: 12px 32px;
+                        &-text {
+                            @include Ubuntu(24px, 500, normal);
+                        }
+                    }
+                    &__text {
+                        @include Ubuntu(16px, 300, 140%);
+                        width: 100%;
+                    }
+                    &__price {
+                        @include flex(center, center, 12px);
+                        &-number {
+                            @include Ubuntu(32px, 500, 140%);
+                        }
+                        &-text {
+                            @include Ubuntu(18px, 300, 140%);
+                        }
+                    }
+                    &__list {
+                        @include flex(flex-start, flex-start, 16px);
+                        flex-direction: column;
+                        &-box {
+                            @include flex(flex-start, flex-start, 16px);
+                            &-text {
+                                @include Ubuntu(18px, 400, 140%);
+                            }
+                        }
+                    }
+                }
+
+
+
+
+                &-box1 {
+                    @include flex(flex-start, flex-start, 12px);
+                    flex-direction: column;
+                    padding: 32px;
+                    border-radius: 44px;
+                    border: 1px solid $Stroke;
+                    background: $White;
+                    box-shadow: 0px 0px 16px -6px rgba(0, 0, 0, 0.25) inset;
+                    &__chip {
+                        @include flex(center, center, 10px);
+                        border-radius: 44px;
+                        background-color: $Accent;
+                        padding: 12px 32px;
+                        &-text {
+                            @include Ubuntu(24px, 500, normal);
+                            color: $White;
+                        }
+                    }
+                    &__text {
+                        @include Ubuntu(16px, 300, 140%);
+                        width: 100%;
+                    }
+                    &__price {
+                        @include flex(center, center, 12px);
+                        &-number {
+                            @include Ubuntu(32px, 500, 140%);
+                        }
+                        &-text {
+                            @include Ubuntu(18px, 300, 140%);
+                        }
+                    }
+                    &__list {
+                        @include flex(flex-start, flex-start, 16px);
+                        flex-direction: column;
+                        &-box {
+                            @include flex(flex-start, flex-start, 16px);
+                            &-text {
+                                @include Ubuntu(18px, 400, 140%);
+                            }
+                        }
+                    }
+                }
+            }
+            .section2 {
+                @include flex(flex-start, center, 20px);
+                flex-direction: column;
+                &__text {
+                    @include Ubuntu(28px, 300, normal);
+                    text-transform: uppercase;
+                }
+                &__title {
+                    width: 50%;
+                    margin-bottom: 100px;
+                }
+                &-container {
+                    @include flex(flex-start, center, 60px);
+                    padding: 0px 100px;
+                }
+                &-box {
+                    @include flex(center, center, 30px);
+                    flex-direction: column;
+                    width: 30%;
+                    &__title {
+                        @include Ubuntu(21px, 500, normal);
+                    }
+                    &__text {
+                        @include Ubuntu(24px, 300, normal);
+                    }
+                }
+            }
+        }
+    }
+}

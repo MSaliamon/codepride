@@ -17,14 +17,15 @@ body {
             .burger-menu {
                 display: none;
             }
-        }
-        .nav {
-            &__list {
-                display: flex;
-                gap: 56px;
-                &__item {
-                    &__link {
-                        @include Ubuntu(24px, 400, normal);
+            .nav {
+                &__list {
+                    display: flex;
+                    gap: 56px;
+                    &__item {
+                        &__link {
+                            color: $Black;
+                            @include Ubuntu(24px, 400, normal);
+                        }
                     }
                 }
             }
