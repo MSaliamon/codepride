@@ -223,6 +223,127 @@ body {
                     margin-top: 460px;
                 }
             }
+            .section4 {
+                @include flex(flex-start, center, 80px);
+                padding: 0px 164px;
+                flex-direction: column;
+                &-container {
+                    @include flex(flex-start, flex-start, 30px);
+                }
+                &-box {
+                    @include flex(flex-start, flex-start, 64px);
+                    flex-direction: column;
+                    padding: 32px;
+                    border-radius: 44px;
+                    border: 2px solid $Light-Purple;
+                    &__textbox {
+                        @include flex(flex-start, flex-start, 20px);
+                        flex-direction: column;
+                        &-title {
+                            @include Ubuntu(28px, 500, normal);
+                            width: 90%;
+                        }
+                        &-text {
+                            @include Ubuntu(16px, 300, 140%);
+                            width: 100%;
+                        }
+                    }
+                }
+                &-text--min-width {
+                    width: 72%;
+                }
+            }
+            .section5 {
+                position: absolute;
+                @include flex(flex-start, center, 20px);
+                flex-direction: column;
+                margin: 120px 219px;
+                border-radius: 44px;
+                background-color: $HoverLight;
+                padding: 80px 44px;
+                &__sub-title {
+                    @include Ubuntu(28px, 300, normal);
+                    text-transform: uppercase;
+                }
+                &__text {
+                    @include Ubuntu(32px, 300, normal);
+                    text-align: center;
+                    width: 63%;
+                }
+                &__btn {
+                    @include Inter(24px, 600, normal);
+                    padding: 24px 44px;
+                    color: $White;
+                }
+                z-index: 20;
+            }
+        }
+        .footer {
+            @include flex(flex-start, flex-start, 79px);
+            flex-direction: column;
+            background-color: $Black;
+            margin-top: 300px;
+            padding: 500px 200px 80px;
+    
+            &-container {
+                @include flex(flex-start, flex-start, 225px);
+            }
+            &-box {
+                @include flex(flex-start, flex-start, 32px);
+                flex-direction: column;
+                &__tell {
+                    @include Ubuntu(28px, 500, normal);
+                    color: $White;
+                }
+                &__email {
+                    @include Ubuntu(28px, 500, normal);
+                    color: $White;
+                }
+                &__city {
+                    @include Ubuntu(28px, 500, normal);
+                    color: $White;
+                }
+                &__social {
+                    @include flex(flex-start, flex-start, 28px);
+                }
+            }
+            &-box2 {
+                @include flex(flex-start, flex-start, 72px);
+                flex-direction: column;
+            }
+            &-contentbox {
+                @include flex(flex-start, flex-start, 160px);
+            }
+            &-textbox {
+                @include flex(flex-start, flex-start, 24px);
+                flex-direction: column;
+                &__title {
+                    @include Ubuntu(28px, 500, normal);
+                    color: $White;
+                }
+                &__contain {
+                    @include flex(flex-start, flex-start, 16px);
+                    flex-direction: column;
+                    &-text {
+                        @include Ubuntu(20px, 300, normal);
+                        color: $White;
+                    }
+                }
+            }
+            &-contentbox2 {
+                @include flex(flex-start, flex-start, 250px);
+            }
+            &-container2 {
+                @include flex(center, center, 10px);
+                padding: 32px 10px 10px 10px;
+                border-top: 1px solid $Gray;
+                width: 90%;
+                &__text {
+                    @include Ubuntu(20px, 300, normal);
+                    color: $White;
+                    text-align: center;
+                }
+            }
         }
     }
 }
