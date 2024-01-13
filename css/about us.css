@@ -273,3 +273,59 @@ body .wrapper .main .section2-container__box-text {
   font-weight: 300;
   line-height: normal;
 }
+body .wrapper .main .section3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 120px 100px;
+}
+body .wrapper .main .section3__sub-title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 140%;
+}
+body .wrapper .main .section3__title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 56px;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  width: 90%;
+}
+body .wrapper .main .section3__title-text {
+  color: #8E96EA;
+}
+body .wrapper .main .section3-container {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0px;
+}
+body .wrapper .main .section3-container__text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 160%;
+}
+body .wrapper .main .section3-container__img {
+  width: 54%;
+}
