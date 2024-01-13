@@ -672,6 +672,20 @@ body {
 @media screen and (max-width: 1280px) and (min-width: 834px) {
     body {
         .wrapper {
+            .header {
+                &__btn {
+                    display: none;
+                }
+                .burger-menu {
+                    display: block;
+                }
+                .btn {
+                    display: none;
+                }
+            }
+            .nav {
+                display: none;
+            }
             .main {
                 .section1 {
                     padding: 100px 151px;
@@ -745,9 +759,7 @@ body {
                 }
             }
             .nav {
-                &__list {
-                    display: none;
-                }
+                display: none;
             }
             .main {
                 .section1 {

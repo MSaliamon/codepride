@@ -1494,6 +1494,18 @@ body .footer-container2__text {
   }
 }
 @media screen and (max-width: 1280px) and (min-width: 834px) {
+  body .wrapper .header__btn {
+    display: none;
+  }
+  body .wrapper .header .burger-menu {
+    display: block;
+  }
+  body .wrapper .header .btn {
+    display: none;
+  }
+  body .wrapper .nav {
+    display: none;
+  }
   body .wrapper .main .section1 {
     padding: 100px 151px;
   }
@@ -1532,7 +1544,7 @@ body .footer-container2__text {
   body .wrapper .header .btn {
     display: none;
   }
-  body .wrapper .nav__list {
+  body .wrapper .nav {
     display: none;
   }
   body .wrapper .main .section1 {
