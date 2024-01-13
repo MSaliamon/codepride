@@ -1,0 +1,93 @@
+@import './reset';
+@import './mixins';
+@import './vars';
+
+
+
+
+body {
+    background-color: $Background;
+    color: $Black;
+    .wrapper {
+        .header {
+            @include flex(space-around, center, 0px);
+            padding: 20px 0px 19px 0px;
+            &__btn {
+                padding: 18px 32px;
+                @include Inter(16px, 600, normal);
+                color: $Background;
+            }
+            .burger-menu {
+                display: none;
+            }
+            .nav {
+                &__list {
+                    display: flex;
+                    gap: 56px;
+                    &__item {
+                        &__link {
+                            color: $Black;
+                            @include Ubuntu(24px, 400, normal);
+                        }
+                    }
+                }
+            }
+        }
+        .btn {
+            @include flex(center, center, 10px);
+            background-color: $Accent;
+            text-transform: uppercase;
+            border-radius: 44px;
+        }
+        .main {
+            .section1 {
+                @include flex(flex-start, flex-start, 20px);
+                padding: 120px 125px;
+                &-container {
+                    @include flex(flex-start, flex-start, 24px);
+                    flex-direction: column;
+                    &__title {
+                        @include Ubuntu(72px, 400, 140%);
+                        text-transform: uppercase;
+                    }
+                    &__text {
+                        @include Ubuntu(24px, 300, 120%);
+                        width: 90%;
+                    }
+                    &__btn {
+                        @include Inter(24px, 600, normal);
+                        padding: 24px 44px;
+                        color: $Background;
+                    }
+                }
+            }
+            .section2 {
+                @include flex(flex-start, flex-start, 48px);
+                flex-direction: column;
+                padding: 120px 100px;
+                &__title {
+                    @include Ubuntu(56px, 500, normal);
+                    width: 70%;
+                }
+                &__title-text {
+                    color: $Purple;
+                }
+                &-container {
+                    @include flex(flex-start, flex-end, 62px);
+                    &__box {
+                        @include flex(flex-start, flex-start, 24px);
+                        flex-direction: column;
+                        &-title {
+                            @include Ubuntu(44px, 400, normal);
+                            width: 90%;
+                            text-transform: uppercase;
+                        }
+                        &-text {
+                            @include Ubuntu(20px, 300, normal);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
