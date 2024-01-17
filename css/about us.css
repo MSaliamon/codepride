@@ -706,3 +706,31 @@ body .wrapper .footer-container2__text {
   color: #FEFEFF;
   text-align: center;
 }
+
+@media screen and (max-width: 1728px) and (min-width: 1281px) {
+  body .wrapper .main .section1 {
+    padding: 120px 0px;
+  }
+  body .wrapper .main .section2 {
+    padding: 120px 3px;
+  }
+  body .wrapper .main .section2__title {
+    width: 74%;
+  }
+  body .wrapper .main .section2-container__box-text {
+    width: 86%;
+  }
+  body .wrapper .main .section3 {
+    padding: 120px 0px;
+  }
+  body .wrapper .main .section3__title {
+    width: 68%;
+  }
+  body .wrapper .main .section5 {
+    margin: 120px 38px;
+    padding: 80px 0px;
+  }
+  body .wrapper .footer-contentbox2 {
+    gap: 260px;
+  }
+}

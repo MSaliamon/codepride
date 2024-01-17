@@ -268,3 +268,43 @@ body {
         }
     }
 }
+
+@media screen and (max-width: 1728px) and (min-width: 1281px) {
+    body {
+        .wrapper {
+            .main {
+                .section1 {
+                    padding: 120px 0px;
+                }
+                .section2 {
+                    padding: 120px 3px;
+                    &__title {
+                        width: 74%;
+                    }
+                    &-container {
+                        &__box {
+                            &-text {
+                                width: 86%;
+                            }
+                        }
+                    }
+                }
+                .section3 {
+                    padding: 120px 0px;
+                    &__title {
+                        width: 68%;
+                    }
+                }
+                .section5 {
+                    margin: 120px 38px;
+                    padding: 80px 0px;
+                }
+            }
+            .footer {
+                &-contentbox2 {
+                    gap: 260px;
+                }
+            }
+        }
+    }
+}
