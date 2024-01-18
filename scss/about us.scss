@@ -308,3 +308,100 @@ body {
         }
     }
 }
+
+@media screen and (max-width: 1280px) and (min-width: 834px) {
+    body {
+        .wrapper {
+            .header {
+                &__btn {
+                    display: none;
+                }
+                .burger-menu {
+                    display: block;
+                }
+                .btn {
+                    display: none;
+                }
+            }
+            .nav {
+                display: none;
+            }
+            .main {
+                .section1 {
+                    padding: 100px 0px;
+                    &__img {
+                        width: 50%;
+                    }
+                    &-container {
+                        &__title {
+                            font-size: 44px;
+                        }
+                        &__text {
+                            width: 92%;
+                        }
+                    }
+                }
+                .section2 {
+                    padding: 100px 0px;
+                    &__title {
+                        font-size: 44px;
+                        width: 100%;
+                    }
+                    &-container {
+                        gap: 30px;
+                        &__img {
+                            width: 49%;
+                        }
+                        &__box {
+                            &-title {
+                                font-size: 32px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .section3 {
+                    padding: 120px 0px;
+                    &-container {
+                        flex-direction: column;
+                        &__text {
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .section4 {
+                    &-textbox {
+                        &__text {
+                            width: 95%;
+                        }
+                    }
+                    &-box {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    &-box2 {
+                        gap: 20px;
+                        &__contain {
+                            &-textbox {
+                                &-text {
+                                    width: 98%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .section5 {
+                    &__text {
+                        width: 100%;
+                    }
+                }
+            }
+            .footer {
+                &-contentbox {
+                    gap: 102px;
+                }
+            }
+        }
+    }
+    
+}
+

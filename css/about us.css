@@ -734,3 +734,76 @@ body .wrapper .footer-container2__text {
     gap: 260px;
   }
 }
+@media screen and (max-width: 1280px) and (min-width: 834px) {
+  body .wrapper .header__btn {
+    display: none;
+  }
+  body .wrapper .header .burger-menu {
+    display: block;
+  }
+  body .wrapper .header .btn {
+    display: none;
+  }
+  body .wrapper .nav {
+    display: none;
+  }
+  body .wrapper .main .section1 {
+    padding: 100px 0px;
+  }
+  body .wrapper .main .section1__img {
+    width: 50%;
+  }
+  body .wrapper .main .section1-container__title {
+    font-size: 44px;
+  }
+  body .wrapper .main .section1-container__text {
+    width: 92%;
+  }
+  body .wrapper .main .section2 {
+    padding: 100px 0px;
+  }
+  body .wrapper .main .section2__title {
+    font-size: 44px;
+    width: 100%;
+  }
+  body .wrapper .main .section2-container {
+    gap: 30px;
+  }
+  body .wrapper .main .section2-container__img {
+    width: 49%;
+  }
+  body .wrapper .main .section2-container__box-title {
+    font-size: 32px;
+    width: 100%;
+  }
+  body .wrapper .main .section3 {
+    padding: 120px 0px;
+  }
+  body .wrapper .main .section3-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .wrapper .main .section3-container__text {
+    font-size: 18px;
+  }
+  body .wrapper .main .section4-textbox__text {
+    width: 95%;
+  }
+  body .wrapper .main .section4-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  body .wrapper .main .section4-box2 {
+    gap: 20px;
+  }
+  body .wrapper .main .section4-box2__contain-textbox-text {
+    width: 98%;
+  }
+  body .wrapper .main .section5__text {
+    width: 100%;
+  }
+  body .wrapper .footer-contentbox {
+    gap: 102px;
+  }
+}
