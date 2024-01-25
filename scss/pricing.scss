@@ -1,0 +1,546 @@
+@import './reset';
+@import './mixins';
+@import './vars';
+
+body {
+    background-color: $Background;
+    color: $Black;
+    .wrapper {
+        .header {
+            @include flex(space-around, center, 0px);
+            padding: 20px 0px 19px 0px;
+            &__btn {
+                padding: 18px 32px;
+                @include Inter(16px, 600, normal);
+                color: $Background;
+            }
+            .burger-menu {
+                display: none;
+            }
+            .nav {
+                &__list {
+                    display: flex;
+                    gap: 56px;
+                    &__item {
+                        &__link {
+                            color: $Black;
+                            @include Ubuntu(24px, 400, normal);
+                        }
+                    }
+                }
+            }
+        }
+        .btn {
+            @include flex(center, center, 10px);
+            background-color: $Accent;
+            text-transform: uppercase;
+            border-radius: 44px;
+        }
+        .main {
+            margin-top: 120px;
+            .title-text {
+                color: $Purple;
+            }
+            .section1 {
+                padding: 0px 100px;
+                @include flex(flex-start, flex-start, 140px);
+                flex-direction: column;
+                &-container {
+                    @include flex(flex-start, flex-start, 30px);
+                }
+                &-box {
+                    width: 50%;
+                    @include flex(flex-start, flex-start, 24px);
+                    flex-direction: column;
+                    &__sub-title {
+                        @include Ubuntu(28px, 300, normal);
+                    }
+                    &__title {
+                        @include Ubuntu(64px, 500, normal);
+                        width: 90%;
+                    }
+                    &__text {
+                        @include Ubuntu(24px, 300, 130%);
+                    }
+                    &__contain {
+                        @include flex(flex-start, center, 20px);
+                        flex-direction: column;
+                        border-radius: 44px;
+                        background-color: $White;
+                        &-title {
+                            @include Ubuntu(64px, 500, 140%);
+                        }
+                        &-text1 {
+                            @include Ubuntu(24px, 400, 120%);
+                        }
+                        &-text2 {
+                            @include Ubuntu(16px, 300, 140%);
+                            color: $Purple;
+                        }
+                    }
+                    &__btn {
+                        @include Inter(24px, 600, normal);
+                        @include flex(center, center, 10px);
+                        padding: 24px 90px;
+                        border-radius: 44px;
+                        margin-left: 140px;
+                        color: $Background;
+                    }
+                }
+                &-box2 {
+                    @include flex(flex-start, flex-start, 64px);
+                    flex-direction: column;
+                    &__textbox {
+                        @include flex(flex-start, flex-start, 20px);
+                        flex-direction: column;
+                        &-text1 {
+                            @include Ubuntu(28px, 500, normal);
+                        }
+                        &-text2 {
+                            @include Ubuntu(24px, 300, normal);
+                        }
+                    }
+                }
+            }
+            .section2 {
+                padding: 120px 0px;
+                @include flex(center, center, 80px);
+                flex-direction: column;
+                &-textbox {
+                    @include flex(center, center, 40px);
+                    flex-direction: column;
+                    &__title {
+                        @include Ubuntu(64px, 500, normal);
+                    }
+                    &__text {
+                        @include Ubuntu(32px, 400, normal);
+                        width: 65%;
+                        text-align: center;
+                    }
+                }
+                &-container {
+                    @include flex(flex-start, center, 30px);
+                }
+                &-box {
+                    @include flex(flex-start, flex-start, 12px);
+                    flex-direction: column;
+                    padding: 32px;
+                    border-radius: 44px;
+                    border: 1px solid $Stroke;
+                    background: linear-gradient(209deg, #D3D2FF 0%, #FFF8F9 100%);
+                    box-shadow: 0px 0px 16px -6px rgba(0, 0, 0, 0.25) inset;
+                    &__chip {
+                        @include flex(center, center, 10px);
+                        border-radius: 44px;
+                        background-color: $White;
+                        padding: 12px 32px;
+                        &-text {
+                            @include Ubuntu(24px, 500, normal);
+                        }
+                    }
+                    &__text {
+                        @include Ubuntu(16px, 300, 140%);
+                        width: 100%;
+                    }
+                    &__price {
+                        @include flex(center, center, 12px);
+                        &-number {
+                            @include Ubuntu(32px, 500, 140%);
+                        }
+                        &-text {
+                            @include Ubuntu(18px, 300, 140%);
+                        }
+                    }
+                    &__list {
+                        @include flex(flex-start, flex-start, 16px);
+                        flex-direction: column;
+                        &-box {
+                            @include flex(flex-start, flex-start, 16px);
+                            &-text {
+                                @include Ubuntu(18px, 400, 140%);
+                            }
+                        }
+                    }
+                }
+
+
+
+
+                &-box1 {
+                    @include flex(flex-start, flex-start, 12px);
+                    flex-direction: column;
+                    padding: 32px;
+                    border-radius: 44px;
+                    border: 1px solid $Stroke;
+                    background: $White;
+                    box-shadow: 0px 0px 16px -6px rgba(0, 0, 0, 0.25) inset;
+                    &__chip {
+                        @include flex(center, center, 10px);
+                        border-radius: 44px;
+                        background-color: $Accent;
+                        padding: 12px 32px;
+                        &-text {
+                            @include Ubuntu(24px, 500, normal);
+                            color: $White;
+                        }
+                    }
+                    &__text {
+                        @include Ubuntu(16px, 300, 140%);
+                        width: 100%;
+                    }
+                    &__price {
+                        @include flex(center, center, 12px);
+                        &-number {
+                            @include Ubuntu(32px, 500, 140%);
+                        }
+                        &-text {
+                            @include Ubuntu(18px, 300, 140%);
+                        }
+                    }
+                    &__list {
+                        @include flex(flex-start, flex-start, 16px);
+                        flex-direction: column;
+                        &-box {
+                            @include flex(flex-start, flex-start, 16px);
+                            &-text {
+                                @include Ubuntu(18px, 400, 140%);
+                            }
+                        }
+                    }
+                }
+            }
+            .section3 {
+                margin-top: 120px;
+                &__title {
+                    @include Ubuntu(50px, 500, normal);
+                    text-align: center;
+                }
+                &-wrap {
+                    @include flex(center, center, 30px);
+                    flex-direction: column;
+                    margin-top: 80px;
+                }
+                &-container {
+                    @include flex(center, center, 30px);
+                }
+                &-box {
+                    @include flex(flex-start, flex-start, 16px);
+                    flex-direction: column;
+                    width: 80%;
+                    &__text {
+                        @include Ubuntu(18px, 300, 30px);
+                        color: $Black;
+                        width: 65%;
+                        margin-left: 150px;
+                    }
+                }
+                &-contain {
+                    @include flex(flex-start, center, 38px);
+                    width: 100%;
+                    &__title {
+                        @include Ubuntu(22px, 500, 28px);
+                        margin-left: 150px;
+                    }
+                    &__imgbox-img {
+                        padding: 11px;
+                        border-radius: 12px;
+                        border: 2px solid $Accent;
+                    }
+                }
+                .min--gap {
+                    gap: 140px;
+                }
+                .more--gap {
+                    gap: 60px;
+                }
+                .more--gap2 {
+                    gap: 139px;
+                }
+            }
+        }
+        .footer {
+            @include flex(flex-start, flex-start, 79px);
+            flex-direction: column;
+            background-color: $Black;
+            margin-top: 300px;
+            padding: 100px 43px 80px;
+    
+            &-container {
+                @include flex(flex-start, flex-start, 225px);
+            }
+            &-box {
+                @include flex(flex-start, flex-start, 32px);
+                flex-direction: column;
+                &__tell {
+                    @include Ubuntu(28px, 500, normal);
+                    color: $White;
+                }
+                &__email {
+                    @include Ubuntu(28px, 500, normal);
+                    color: $White;
+                }
+                &__city {
+                    @include Ubuntu(28px, 500, normal);
+                    color: $White;
+                }
+                &__social {
+                    @include flex(flex-start, flex-start, 28px);
+                }
+            }
+            &-box2 {
+                @include flex(flex-start, flex-start, 72px);
+                flex-direction: column;
+            }
+            &-contentbox {
+                @include flex(flex-start, flex-start, 160px);
+            }
+            &-textbox {
+                @include flex(flex-start, flex-start, 24px);
+                flex-direction: column;
+                &__title {
+                    @include Ubuntu(28px, 500, normal);
+                    color: $White;
+                }
+                &__contain {
+                    @include flex(flex-start, flex-start, 16px);
+                    flex-direction: column;
+                    &-text {
+                        @include Ubuntu(20px, 300, normal);
+                        color: $White;
+                    }
+                }
+            }
+            &-contentbox2 {
+                @include flex(flex-start, flex-start, 200px);
+            }
+            &-container2 {
+                @include flex(center, center, 10px);
+                padding: 32px 10px 10px 10px;
+                border-top: 1px solid $Gray;
+                width: 90%;
+                &__text {
+                    @include Ubuntu(20px, 300, normal);
+                    color: $White;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1727px) and (min-width: 1280px) {
+    body {
+        .wrapper {
+            .main {
+                .section1 {
+                    padding: 0px 5px;
+                    &-box {
+                        &__title {
+                            width: 84%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 834px) {
+    body {
+        .wrapper {
+            .header {
+                &__btn {
+                    display: none;
+                }
+                .burger-menu {
+                    display: block;
+                }
+                .btn {
+                    display: none;
+                }
+            }
+            .nav {
+                display: none;
+            }
+            .main {
+                .section1 {
+                    padding: 0px 5px;
+                    &-container {
+                        gap: 20px;
+                    }
+                    &-box {
+                        &__title {
+                            width: 84%;
+                            font-size: 56px;
+                        }
+                        &__contain {
+                            &-title {
+                                font-size: 44px;
+                            }
+                            &-text2 {
+                                text-align: center;
+                            }
+                        }
+                        &__btn {
+                            margin-left: 0px;
+                        }
+                    }
+                }
+                .section2 {
+                    &-textbox {
+                        &__title {
+                            text-align: center;
+                        }
+                        &__text {
+                            width: 85%;
+                        }
+                    }
+                    &-container {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                }
+                .section3 {
+                    &-contain {
+                        &__title {
+                            margin-left: 0px;
+                            width: 69%;
+                        }
+                    }
+                    .min--gap {
+                        gap: 71px;
+                    }
+                }
+            }
+            .footer {
+                &-container {
+                    flex-direction: column;
+                    gap: 80px;
+                }
+                &-contentbox2 {
+                    gap: 254px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and  (max-width: 376px) {
+    body {
+        .wrapper {
+            .header {
+                &__btn {
+                    display: none;
+                }
+                .burger-menu {
+                    display: block;
+                }
+                .btn {
+                    display: none;
+                }
+            }
+            .nav {
+                display: none;
+            }
+            .main {
+                .section1 {
+                    padding: 100px 0px;
+                    &-container {
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    &-box {
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        &__title {
+                            font-size: 32px;
+                            width: 100%;
+                            text-align: center;
+                        }
+                        &__text {
+                            text-align: center;
+                        }
+                        &__contain {
+                            &-title {
+                                font-size: 28px;
+                            }
+                        }
+                        &__btn {
+                            font-size: 18px;
+                            padding: 16px 25px;
+                            margin-left: 0px;
+                        }
+                    }
+                }
+                .section2 {
+                    &-textbox {
+                        &__title {
+                            font-size: 32px;
+                            text-align: center;
+                        }
+                        &__text {
+                            width: 100%;
+                            font-size: 24px;
+                        }
+                    }
+                    &-container {
+                        flex-direction: column;
+                    }
+                    &-box {
+                        &__price-number {
+                            font-size: 24px;
+                        }
+                    }
+                    &-box1 {
+                        &__price-number {
+                            font-size: 24px;
+                        }
+                    }
+                }
+                .section3 {
+                    &__title {
+                        font-size: 32px;
+                    }
+                    &-wrap {
+                        flex-direction: column;
+                    }
+                    &-container {
+                        flex-direction: column;
+                    }
+                    &-contain {
+                        &__title {
+                            margin-left: 0px;
+                            width: 90%;
+                        }
+                    }
+                    &-box {
+                        width: 100%;
+                    }
+                    .min--gap {
+                        gap: 0px;
+                    }
+                    .more--gap2 {
+                        gap: 100px;
+                    }
+                }
+            }
+            .footer {
+                padding: 100px 0px 80px;
+                &-container {
+                    flex-direction: column;
+                    gap: 50px;
+                }
+                &-contentbox {
+                    flex-direction: column;
+                    gap: 50px;
+                }
+                &-contentbox2 {
+                    flex-direction: column;
+                    gap: 50px;
+                }
+            }
+        }
+    }
+}
