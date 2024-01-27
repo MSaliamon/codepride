@@ -123,9 +123,6 @@ body .wrapper .header__btn {
   font-weight: 600;
   color: #F7F7FB;
 }
-body .wrapper .header .burger-menu {
-  display: none;
-}
 body .wrapper .header .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,6 +135,9 @@ body .wrapper .header .nav__list__item__link {
   font-size: 24px;
   font-weight: 400;
   line-height: normal;
+}
+body .wrapper .header .hamburger {
+  display: none;
 }
 body .wrapper .btn {
   display: -webkit-box;
@@ -902,13 +902,50 @@ body .wrapper .footer-container2__text {
   body .wrapper .header__btn {
     display: none;
   }
-  body .wrapper .header .burger-menu {
+  body .wrapper .header .hamburger {
     display: block;
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: black solid 1px;
+    background: white;
+    cursor: pointer;
   }
-  body .wrapper .header .btn {
+  body .wrapper .header .close__icon {
     display: none;
   }
-  body .wrapper .nav {
+  body .wrapper .header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: black;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+  }
+  body .wrapper .header .showMenu {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  body .wrapper .header .btn {
     display: none;
   }
   body .wrapper .main .section1 {
@@ -958,17 +995,54 @@ body .wrapper .footer-container2__text {
     gap: 254px;
   }
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 833px) {
   body .wrapper .header__btn {
     display: none;
   }
-  body .wrapper .header .burger-menu {
+  body .wrapper .header .hamburger {
     display: block;
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: black solid 1px;
+    background: white;
+    cursor: pointer;
   }
-  body .wrapper .header .btn {
+  body .wrapper .header .close__icon {
     display: none;
   }
-  body .wrapper .nav {
+  body .wrapper .header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: black;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+  }
+  body .wrapper .header .showMenu {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  body .wrapper .header .btn {
     display: none;
   }
   body .wrapper .main .section1 {

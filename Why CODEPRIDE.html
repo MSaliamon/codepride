@@ -16,14 +16,18 @@
                 <a href="./index.html" class="loog__link"><img src="./img/Logo.svg" alt="logo" class="logo__img"></a>
             </div>
             <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="./Why CODEPRIDE.html" class="nav__link">Why CODEPRIDE</a></li>
-                    <li class="nav__item"><a href="./pricing.html" class="nav__link">Pricing</a></li>
-                    <li class="nav__item"><a href="./about us.html" class="nav__link">About us</a></li>
-                    <li class="nav__item"><a href="./careers.html" class="nav__link">Careers</a></li>
+                <ul class="menu nav__list">
+                    <li class="nav__item"><a class="menu__item nav__link" href="./Why CODEPRIDE.html">Why CODEPRIDE</a></li>
+                    <li class="nav__item"><a class="menu__item nav__link" href="./pricing.html">Pricing</a></li>
+                    <li class="nav__item"><a class="menu__item nav__link" href="./about us.html">About us</a></li>
+                    <li class="nav__item"><a class="menu__item nav__link" href="./careers.html">Careers</a></li>
                 </ul>
             </nav>
-            <img src="./img/menu.svg" alt="burger-menu" class="burger-menu">
+              <button class="hamburger">
+                <!-- material icons https://material.io/resources/icons/ -->
+                <i class="menu__icon material-icons">menu</i>
+                <i class="close__icon material-icons">close</i>
+              </button>
             <button class="btn header__btn">find a developer</button>
         </header>
         <main class="main">
@@ -288,5 +292,6 @@
             </div>
         </footer>
     </div>
+    <script src="./burger.js"></script>
 </body>
 </html>
